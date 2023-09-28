@@ -1,0 +1,29 @@
+//protected property accessed from subclass 
+package pack.java;
+public class Parentclass
+{
+    protected int protectedproperty;
+    int defaultproperty;
+    public Parentclass()
+  {
+protectedproperty=30;
+defaultproperty=20;
+}
+}
+//package pack.java;
+public class Subclass extends Parentclass
+{
+    public void accessPropeties()
+{
+System.out.printin("protected property:" +protectedproperty);
+System.out.printin("default property:" +defaultproperty);
+}
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+Subclass obj=new Subclass();
+obj.accessProperties();
+}
+}
