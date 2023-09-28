@@ -1,0 +1,64 @@
+
+//package creation
+package pack1
+class MathOperation
+{
+    int add (int a,int b)
+    {
+return a+b;
+}
+int subtract (int a,int b)
+{
+    return a-b;
+}
+}
+package pack2
+class StringOperation
+{
+    String concatenate(String str1, String str2)
+{
+String str3;
+str3=str1.concat(str2);
+return str3;
+}
+String reversetype( String s)
+{
+    String rev"";
+for（int i=s.length()-1:i>=0;i--）
+{
+    rev=rev+s.charAt(i) ;
+｝
+return rev;
+}
+package pack3 
+class Calculator
+{
+    int multiply (int a,int b)
+{
+    return a*b;
+}
+int divide(int a,int b)
+{
+    return a/b;
+}
+}
+package pack4 
+import pack1.*;
+import pack2.*; 
+import pack3.*;
+public class Main
+{
+public static void main (String[]args)
+{
+MathOperation obj= new MathOperation();
+System.out.printIn("addition:" +obj. add (10,4));
+System.out.printin("subtraction:" +obj.add (6,2));
+String s="java";
+String Operation obj1= new String Operation;
+System.out. printIn("concatenate string:"+obj1. concatenate ("hello", "world"));
+System.out.printIn("reverse string:"+ obj1.reversetype("java program"));
+Calculator obj3=new Calculator();
+System.out.printIn("multiplication:"+obj3.multiply (26,8));
+System.out.printIn ("division:" +obj3.divide (30,5));
+}
+}
